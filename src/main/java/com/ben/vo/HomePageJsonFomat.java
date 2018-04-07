@@ -10,12 +10,22 @@ public class HomePageJsonFomat {
 	private List<String> navigations;
 	private List<String> locations;
 	private List<String> useroptions;
+	private String headerLabel = "Summa!";
 	
-	public HomePageJsonFomat(List<String> navigations, List<String> locations, List<String> useroptions) {
+
+	public HomePageJsonFomat(List<String> navigations, List<String> locations, List<String> useroptions,
+			String headerLabel) {
 		super();
 		this.navigations = navigations;
 		this.locations = locations;
 		this.useroptions = useroptions;
+		this.headerLabel = headerLabel;
+	}
+	public String getHeaderLabel() {
+		return headerLabel;
+	}
+	public void setHeaderLabel(String headerLabel) {
+		this.headerLabel = headerLabel;
 	}
 	public List<String> getnavigations() {
 		return navigations;
